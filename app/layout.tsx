@@ -11,7 +11,17 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Chapeaux Artisanaux - Boutique en ligne de chapeaux brodés",
   description: "Découvrez notre collection unique de chapeaux brodés artisanaux, alliant tradition et modernité.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  openGraph: {
+    images: [
+      {
+        url: 'https://gora-shop.netlify.app/cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Chapeaux Artisanaux'
+      }
+    ]
+  }
 }
 
 export default function RootLayout({
